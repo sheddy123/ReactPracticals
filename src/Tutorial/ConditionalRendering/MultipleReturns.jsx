@@ -12,7 +12,7 @@ const MultipleReturns = () => {
         fetch(url)
         .then((resp)=> {
             if(resp.status >= 200 && resp.status <=299){
-                return resp.json()
+                return resp.json();
             }else{
                 setLoading(false);
                 setIsError(true);
